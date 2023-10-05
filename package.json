@@ -1,7 +1,7 @@
 {
   "name": "quizlet",
   "version": "0.0.0",
-  "engine": {
+  "engines": {
     "node": "^18.0.0"
   },
   "scripts": {
