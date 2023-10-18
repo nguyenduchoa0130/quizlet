@@ -1,1 +1,24 @@
-<p>Header works</p>
+<header>
+  <a class="logo" routerLink="/"><span>E</span> Learning</a>
+  <ul>
+    <li>
+      <span routerLink="/" [routerLinkActive]="'active'">Home</span>
+    </li>
+    <li>
+      <span [matMenuTriggerFor]="menu">Your library</span>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <span>Redial</span>
+        </button>
+        <button mat-menu-item>
+          <span>Check voice mail</span>
+        </button>
+      </mat-menu>
+    </li>
+    <li class="search-wrapper">
+      <input class="form-control" placeholder="Study sets, textbooks, questions..." />
+    </li>
+    <li><span routerLink="auth/login" [routerLinkActive]="'active'">Log in</span></li>
+    <li><span routerLink="auth/sign-up" [routerLinkActive]="'active'">Sign up</span></li>
+  </ul>
+</header>
