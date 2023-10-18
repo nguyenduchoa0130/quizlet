@@ -1,1 +1,1 @@
-console.log('Init proj');
+export * from './loading-spinner.service';

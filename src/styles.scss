@@ -9,13 +9,20 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+body * {
   font-family: "Poppins", sans-serif !important;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,14 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutModule } from './layouts/layout.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterModule } from './shared/components/footer/footer.module';
+import { HeaderModule } from './shared/components/header/header.module';
+import { LoadingSpinnerModule } from './shared/components/loading-spinner/loading-spinner.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HeaderModule,
+    FooterModule,
+    LoadingSpinnerModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
